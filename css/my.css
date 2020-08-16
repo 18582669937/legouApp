@@ -1,0 +1,85 @@
+body,html{
+    background-color: pink;
+}
+/* top */
+.top{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.top div:first-child{
+    width: 20%;
+    margin-left: 10px;
+}
+img{
+    width: 100%;  
+}
+.top div:nth-child(2){
+    margin-left: 30px;
+}
+.top div:nth-child(2) p{
+    line-height: 20px;
+    width:80px;
+}
+
+
+
+main{
+    flex: 1;
+    overflow-y: scroll;
+}
+main .order-info{
+    margin-top: 10px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:18vw;
+    padding:0 5px;
+    box-sizing: border-box;
+}
+main .order-info li{
+    width: 25%;
+    text-align: center;
+}
+main .order-info li a p:first-child{
+    font-size: 36px;
+    color:#000;
+}
+main .order-info li a p:nth-child(2){
+    font-size: 12px;
+    color:#000;
+}
+
+/* function-list */
+.function-list{
+   margin-top: 10px;
+   background-color: #fff;
+   display: flex;
+   flex-direction: column;
+    background-color: #fff;
+    padding:10px;
+    margin-top: 10px;
+}
+.function-list li{
+    padding:20px 20px;
+}
+.function-list li a{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.function-list li a span:first-child{
+    font-size: 26px;
+    color: red;
+}
+.function-list li a span:nth-child(2){
+    color:#000;
+    font-size: 16px;
+    margin-left: 10px;
+}
+.function-list li a>span{
+    margin-top: 8px;
+    font-size: 24px;
+    font-size: #ccc;
+}

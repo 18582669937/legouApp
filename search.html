@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 引入重置样式 -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- 引入公共样式 -->
+    <link rel="stylesheet" href="./css/common.css">
+    <!-- 阿里巴巴矢量图 -->
+    <link rel="stylesheet" href="./lib/iconfont/iconfont.css">
+    <!-- 引入当前css -->
+    <link rel="stylesheet" href="./css/search.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header class="header">
+        <span class="iconfont icon-arrow-left"></span>
+        <div>
+            <span class="iconfont icon-sousuo" id="back"></span>
+            <input type="text" placeholder="程序员假发" id="kw">
+        </div>
+        <button type="button" id="kw-btn">搜索</button>
+    </header>
+    <main class="main">
+        <!-- 历史纪录 -->
+        <div class="history-content">
+            <div>
+                <p>最新搜索</p>
+                <span class="iconfont icon-shanchu" id="delete"></span>
+            </div>
+            <ul class="search-list">
+                         
+            </ul>
+        </div>
+    </main>
+
+</body>
+
+</html>
+<!-- 引入jq插件 -->
+<script src="lib/jquery/jquery.js"></script>
+<!-- 引入当前页面js -->
+<script src="js/search.js"></script>
+<!-- common -->
+<script src="js/common.js"></script>

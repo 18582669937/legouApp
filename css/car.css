@@ -1,0 +1,147 @@
+/* 头部 */
+body,html{
+    background-color: #fff;
+    
+}
+
+header {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    height: 45px;
+    padding-left: 10px;
+}
+
+header span {
+    font-size: 16px;
+}
+header p{
+    flex: 1;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* 主体 */
+main{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow-y: scroll;
+    padding:0 5px;
+}
+/* 购物车 */
+.car-list li{
+    
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+   
+    /* justify-content: space-between; */
+}
+label.checkbox input:checked + span{
+    background-color: red;
+    border:1px solid red;
+    color:#fff;
+    text-align: center;
+}
+label.checkbox span{
+   display:inline-block;
+   width:20px;
+   height: 20px;
+   border-radius: 50%;
+   border:1px solid #ccc;
+   color:transparent;
+}
+label.checkbox input{
+    display: none;
+}
+
+.car-list .content{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 10px 10px 0;
+    box-sizing: border-box;
+    position: relative;
+    border-bottom: 1px solid #ccc;
+}
+.car-list .content img{
+    width:22vw;
+    height:22vw;
+    vertical-align:middle;
+    margin: 10px;
+}
+.car-list .content div .p1{
+    line-height: 30px;
+}
+.car-list .content div .p2{
+    color:#999BA1;
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+.car-list .content div span{
+    color:#E43130;
+    font-size: 14px;
+    font-weight: bold;
+}
+/* 商品加减 */
+/* .car-list .content>div{
+    position: relative;
+} */
+.car-list .reAdd{
+    display: flex;
+    position: absolute;
+    right:10px;
+    bottom:3px;
+}
+.car-list .reAdd div:first-child{
+   width:20px;
+   text-align: center;
+   border:1px solid #666;
+   border-right: transparent;
+}
+.car-list .reAdd input{
+    width:25px;
+    text-align: center;
+    border:1px solid #666;
+    outline: none;
+ }
+ .car-list .reAdd div:nth-child(3){
+    width:20px;
+    text-align: center;
+    border:1px solid #666;
+    border-left: transparent;
+ }
+
+ /* 结算 */
+  .account{
+     display: flex;
+     justify-content: space-between;
+     height:35px;
+     border-top:1px solid #ddd;
+     border-bottom:1px solid #ddd;
+ }
+ .account label{
+    margin:6px 5px 0 5px;
+}
+.account div{
+   line-height: 35px;
+}
+ .account div:nth-child(3)>span{
+   color:#E43130;
+ }
+  .account div:nth-child(3){
+     flex: 1;
+     text-align: center;
+     color:#666;
+ }  
+ .account a{
+     display: inline-block;
+     height:100%;
+     line-height: 35px;
+     background-color: #E43130;
+     color:#fff;
+     padding:0 10px;
+ }
+ 
